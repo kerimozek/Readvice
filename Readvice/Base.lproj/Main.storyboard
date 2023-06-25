@@ -26,14 +26,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zımbıtlemeç" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nd-iI-hJk">
-                                        <rect key="frame" x="289" y="122" width="60" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zımbıtlemeç" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nd-iI-hJk">
+                                        <rect key="frame" x="16" y="122" width="333" height="12"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teyfur Zımbalanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2F-gl-ea4">
-                                        <rect key="frame" x="244.33333333333329" y="103.66666666666666" width="104.66666666666666" height="14.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teyfur Zımbalanan" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2F-gl-ea4">
+                                        <rect key="frame" x="16" y="103.66666666666666" width="333" height="14.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -43,15 +43,17 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="GS7-N3-S9V" secondAttribute="trailing" constant="12" id="Fyp-hz-ERa"/>
                                     <constraint firstItem="O2F-gl-ea4" firstAttribute="top" secondItem="GS7-N3-S9V" secondAttribute="bottom" constant="8" id="MFE-YB-YSA"/>
+                                    <constraint firstItem="7nd-iI-hJk" firstAttribute="leading" secondItem="72E-oH-k9f" secondAttribute="leading" constant="16" id="WLy-Xs-kmv"/>
                                     <constraint firstAttribute="trailing" secondItem="O2F-gl-ea4" secondAttribute="trailing" constant="12" id="Wl3-ve-0UU"/>
                                     <constraint firstAttribute="trailing" secondItem="7nd-iI-hJk" secondAttribute="trailing" constant="12" id="a5y-8h-TOw"/>
                                     <constraint firstItem="7nd-iI-hJk" firstAttribute="top" secondItem="O2F-gl-ea4" secondAttribute="bottom" constant="4" id="aEx-p0-ijK"/>
+                                    <constraint firstItem="O2F-gl-ea4" firstAttribute="leading" secondItem="72E-oH-k9f" secondAttribute="leading" constant="16" id="oSN-A2-dLX"/>
                                     <constraint firstItem="GS7-N3-S9V" firstAttribute="top" secondItem="72E-oH-k9f" secondAttribute="top" constant="12" id="qiy-6J-5SC"/>
                                     <constraint firstItem="GS7-N3-S9V" firstAttribute="leading" secondItem="72E-oH-k9f" secondAttribute="leading" constant="12" id="skM-op-RfH"/>
                                     <constraint firstAttribute="bottom" secondItem="7nd-iI-hJk" secondAttribute="bottom" constant="4" id="v8s-1L-Okb"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Favorite Books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzL-ap-32i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Favorite Books" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzL-ap-32i">
                                 <rect key="frame" x="104" y="265" width="185" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -192,8 +194,20 @@
                     <view key="view" contentMode="scaleToFill" id="tG6-W2-uFB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vO-dP-RVk">
+                                <rect key="frame" x="162.33333333333334" y="415.66666666666669" width="68.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WUN-oN-c1u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5vO-dP-RVk" firstAttribute="centerX" secondItem="tG6-W2-uFB" secondAttribute="centerX" id="4fM-By-SDd"/>
+                            <constraint firstItem="5vO-dP-RVk" firstAttribute="centerY" secondItem="tG6-W2-uFB" secondAttribute="centerY" id="Ebg-eM-o5Y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kXx-Sw-IKl"/>
                 </viewController>
@@ -201,11 +215,11 @@
             </objects>
             <point key="canvasLocation" x="1908" y="689"/>
         </scene>
-        <!--Item-->
+        <!--Main-->
         <scene sceneID="82S-JQ-6G9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bje-BE-Xj8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="upc-Dq-PHM"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="house.fill" catalog="system" id="upc-Dq-PHM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OWf-s3-t7P">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -239,11 +253,11 @@
             </objects>
             <point key="canvasLocation" x="-282" y="392"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="1mh-A3-3So">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="joT-UO-ZNQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="star" catalog="system" id="k91-1f-m7i"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="k91-1f-m7i"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XdG-Za-OrT">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -260,8 +274,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="house" catalog="system" width="128" height="104"/>
-        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
