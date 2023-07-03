@@ -182,6 +182,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u52-UR-AzM"/>
+                    <connections>
+                        <outlet property="view1" destination="GEX-4e-Ge2" id="9df-tR-nOy"/>
+                        <outlet property="view2" destination="ZVa-CL-HQm" id="ZFn-7p-6Sr"/>
+                        <outlet property="view3" destination="5Sz-kf-f8w" id="0dD-Ih-s2Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

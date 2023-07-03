@@ -1,26 +1,21 @@
 //
-//  ViewController.swift
+//  deneme.swift
 //  Readvice
 //
-//  Created by Mehmet Kerim ÖZEK on 3.06.2023.
+//  Created by Mehmet Kerim ÖZEK on 26.06.2023.
 //
 
 import UIKit
 
-class MainVC: UIViewController {
-
-    
-    @IBOutlet weak var view1: UIView!
-    @IBOutlet weak var view2: UIView!
-    @IBOutlet weak var view3: UIView!
+class Deneme: UIViewController {
+   
     var views: [CustomView] = []
+//    var movies = []
     var selectedIndex: Int? = nil
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
-        views = [view1, view2, view3]
+     //   views = [view1, view2, view3]
         
         for (index, _view) in views.enumerated() {
             self.view.addSubview(_view)
@@ -29,6 +24,13 @@ class MainVC: UIViewController {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(_:)))
             _view.addGestureRecognizer(tapGesture)
         }
+//        movies.append(Any)
+//        movies.append(Any)
+//        movies.append(Any)
+//
+//        let filteredMovies = movies.filter {
+//
+//        }
     }
     
     @objc func viewTapped(_ sender: UITapGestureRecognizer) {
@@ -37,13 +39,7 @@ class MainVC: UIViewController {
         self.selectedIndex = sender.view?.tag
     }
     
-    private func setupNavigationBar() {
-            let logo = UIImageView(image: UIImage(named: "readvice"))
-            logo.contentMode = .scaleAspectFit
-        //    logo.frame = CGRect(x: 0, y: 0, width: 1, height: 1)
-            
-            navigationItem.titleView = logo
-        }
+    //view içi
     
     class CustomView: UIView {
         func configure(with model: String) {
@@ -73,6 +69,4 @@ class MainVC: UIViewController {
         self.selectedIndex = nil
         // search view'ini kapat
     }
-
 }
-
